@@ -47,8 +47,6 @@ run-p2:
 	java Trenuri
 run-p3:
 	java Drumuri
-run-p4:
-	java Scandal
 
 # Schimbați numele surselor și ale binarelor (peste tot).
 P1.class: Numarare.java
@@ -57,10 +55,6 @@ P2.class: Trenuri.java
 	javac $^
 P3.class: Drumuri.java
 	javac $^
-P4.class: Scandal.java
-	javac $^
-
-# Reguli pentru compilare. Probabil nu e nevoie să le modificați.
 
 $(CC_EXECS): $(OUT_DIR)/%: $(SRC_DIR)/%.cpp
 	g++ -o $@ $^ $(CCFLAGS)
